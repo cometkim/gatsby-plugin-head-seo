@@ -12,3 +12,11 @@ export type Primitive = (
 	| symbol
 	| bigint
 );
+
+export type ObjectType<
+	Typename extends string,
+	Props extends Record<string, unknown> = Record<string, unknown>
+> = (
+  & { type: Typename }
+  & Props
+);

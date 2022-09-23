@@ -1,6 +1,8 @@
 import * as React from 'react';
 
-import { type LiteralUnion } from '../utils';
+import {
+  type LiteralUnion,
+} from '../types/utils';
 
 export type RobotsProps = {
   /**

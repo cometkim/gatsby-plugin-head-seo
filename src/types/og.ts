@@ -1,21 +1,18 @@
-type ObjectType<Typename extends string, Props extends Record<string, unknown>> = (
-  & { type: Typename }
-  & Props
-)
+import { type ObjectType } from './utils';
 
 export type OgType = (
   | ObjectType<'article', OpenGraphArticleObject>
   | ObjectType<'book', OpenGraphBookObject>
   | ObjectType<'profile', OpenGraphProfileObject>
-  | { type: 'website' }
-  | { type: 'music.song' }
-  | { type: 'music.album' }
-  | { type: 'music.playlist' }
-  | { type: 'music.radio_station' }
-  | { type: 'video.movie' }
-  | { type: 'video.episode' }
-  | { type: 'video.tv_show' }
-  | { type: 'video.other' }
+  | ObjectType<'website'>
+  | ObjectType<'music.song'>
+  | ObjectType<'music.album'>
+  | ObjectType<'music.playlist'>
+  | ObjectType<'music.radio_station'>
+  | ObjectType<'video.movie'>
+  | ObjectType<'video.episode'>
+  | ObjectType<'video.tv_show'>
+  | ObjectType<'video.other'>
 );
 
 export type OpenGraphImage = {
