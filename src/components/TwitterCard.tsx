@@ -202,5 +202,5 @@ export default function TwitterCard({
     }
   }
 
-  return metaTags;
+  return <>{metaTags}</>;
 }
