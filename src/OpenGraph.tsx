@@ -4,7 +4,7 @@ import {
   type OgType,
   type OpenGraphImage,
   type OpenGraphVideo,
-} from '../types/og';
+} from './types/og';
 
 export type OpenGraphProps = {
   /**

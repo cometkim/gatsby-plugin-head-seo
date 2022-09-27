@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import {
   type LiteralUnion,
-} from '../types/utils';
+} from './types/utils';
 
 export type RobotsProps = {
   /**

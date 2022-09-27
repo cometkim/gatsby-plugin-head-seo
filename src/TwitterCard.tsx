@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import {
   type TwitterCardType,
-} from '../types/twc';
+} from './types/twc';
 
 export type TwitterCardProps = {
   /**
