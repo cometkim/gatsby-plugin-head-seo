@@ -66,7 +66,7 @@ See [code](src/jsonld) for more detail.
 
 ## Acknowledgement
 
-This plugin was inspired by [https://github.com/ifiokjr/gatsby-plugin-next-seo](https://github.com/ifiokjr/gatsby-plugin-next-seo), which was originally forked from [next-seo](https://github.com/garmeeh/next-seo)
+This plugin was inspired by [gatsby-plugin-next-seo](https://github.com/ifiokjr/gatsby-plugin-next-seo), which was originally forked from [next-seo](https://github.com/garmeeh/next-seo)
 
 ## LICENSE
 
