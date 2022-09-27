@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {
-  type Article,
+  type BlogPosting,
 } from 'schema-dts';
 
 import {
@@ -8,18 +8,18 @@ import {
 } from './_utils';
 import JsonLd from './_JsonLd';
 
-type ArticleJsonLdProps = {
-  article: ExtractContextValue<Article>,
+type BlogPostingJsonLdProps = {
+  blogPosting: ExtractContextValue<BlogPosting>,
 };
 
-export default function ArticleJsonLd({
-  article,
-}: ArticleJsonLdProps) {
+export default function BlogPostingJsonLd({
+  blogPosting,
+}: BlogPostingJsonLdProps) {
   return (
     <JsonLd
       json={{
         '@context': 'https://schema.org',
-        ...article,
+        ...blogPosting,
       }}
     />
   );
