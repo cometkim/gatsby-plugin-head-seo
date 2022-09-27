@@ -13,7 +13,7 @@ Support for the [Gatsby Head API] was added in `gatsby@4.19.0`.
 ### Basic Metadata
 
 ```tsx
-import { BasicMeta, OpenGraph } from 'gasby-plugin-head-seo/src';
+import { BasicMeta, OpenGraph } from 'gatsby-plugin-head-seo/src';
 
 export function Head() {
   const title = 'My Homepage';
