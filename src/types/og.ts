@@ -15,6 +15,57 @@ export type OgType = (
   | ObjectType<'video.other'>
 );
 
+export type OpenGraphBasicMetadata = {
+  /**
+   * The canonical URL of your object that will be used as its permanent ID in the graph.
+   */
+  url: URL,
+
+  /**
+   * The title of your object as it should appear within the graph.
+   */
+  title: string,
+
+  /**
+   * If your object is part of a larger web site, the name which should be displayed for the overall site.
+   */
+  siteName?: string,
+
+  /**
+   * A one to two sentence description of your object.
+   */
+  description?: string,
+
+  /**
+   * The word that appears before this object's title in a sentence.
+   *
+   * @remarks
+   *
+   * An enum of (`"a"`, `"an"`, `"the"`, `""`, `auto`). If auto is chosen, the consumer of your data should chose between `"a"` or `"an"`. Default is `""` (blank).
+   */
+  determiner?: ('a' | 'an' | 'the' | 'auto' | ''),
+
+  /**
+   * The locale these tags are marked up in. Of the format `language_TERRITORY`. Default is `en_US`.
+   */
+  locale?: string,
+
+  /**
+   * An array of other locales this page is available in.
+   */
+  alterateLocales?: string[],
+
+  /**
+   * Image URLs which should represent your object within the graph.
+   */
+  images?: OpenGraphImage[],
+
+  /**
+   * Video URLs to a video file that complements this object.
+   */
+  videos?: OpenGraphVideo[],
+};
+
 export type OpenGraphImage = {
   url: URL,
 
