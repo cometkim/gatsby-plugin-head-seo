@@ -153,6 +153,22 @@ import {
 
 See [code](src/jsonld) for more detail.
 
+### Composition of Multiple `<HeadSeo>`
+
+Set `root=false` to prevent duplication of meta tags.
+
+```tsx
+<HeadSeo location={location} root>
+  <HeadSeo location={location} root={false}>
+    {({ title }) => (
+      // ...
+    )}
+  </HeadSeo>
+</HeadSeo>
+```
+
+BTW, this is not the final solution for de-duplication.
+
 ## Acknowledgement
 
 This plugin was inspired by [https://github.com/ifiokjr/gatsby-plugin-next-seo](https://github.com/ifiokjr/gatsby-plugin-next-seo), which was originally forked from [next-seo](https://github.com/garmeeh/next-seo)

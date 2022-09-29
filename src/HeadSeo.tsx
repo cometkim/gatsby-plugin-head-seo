@@ -12,6 +12,13 @@ export type HeadSeoProps = {
     | (React.ReactElement | React.ReactElement[])
     | ((props: HeadSeoChildProps) => (React.ReactElement | React.ReactElement[]))
   ),
+
+  /**
+   * Don't render root-level meta tags (title, description, etc) when it set to `false`.
+   *
+   * @default true
+   */
+  root?: boolean,
 };
 
 export type HeadSeoChildProps = {
@@ -27,6 +34,7 @@ export type Alternate = {
 };
 
 export default function HeadSeo({
+  root = true,
   location,
   title,
   description,
@@ -61,24 +69,28 @@ export default function HeadSeo({
 
   return (
     <>
-      {props.title && (
-        <title>{props.title}</title>
+      {root && (
+        <>
+        {props.title && (
+          <title>{props.title}</title>
+        )}
+
+        {props.description && (
+          <meta name="description" content={props.description} />
+        )}
+
+        <link rel="canonical" href={props.url.toString()} />
+
+        {alternates.map(alternate => (
+          <link
+            key={alternate.url.toString()}
+            rel="alternate"
+            href={alternate.url.toString()}
+            media={alternate.media || undefined}
+          />
+        ))}
+        </>
       )}
-
-      {props.description && (
-        <meta name="description" content={props.description} />
-      )}
-
-      <link rel="canonical" href={props.url.toString()} />
-
-      {alternates.map(alternate => (
-        <link
-          key={alternate.url.toString()}
-          rel="alternate"
-          href={alternate.url.toString()}
-          media={alternate.media || undefined}
-        />
-      ))}
 
       {(typeof children === 'function'
         ? children(props)
