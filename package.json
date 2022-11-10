@@ -41,19 +41,19 @@
     }
   },
   "dependencies": {
-    "radix3": "^0.1.2",
+    "radix3": "^0.2.1",
     "schema-dts": "^1.1.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.18.10",
-    "@babel/core": "^7.19.1",
-    "@types/react": "^18.0.20",
-    "@types/react-dom": "^18.0.6",
-    "babel-preset-gatsby-package": "^2.23.0",
-    "gatsby": "^4.23.0",
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.20.2",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.8",
+    "babel-preset-gatsby-package": "^3.0.0",
+    "gatsby": "^5.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "typescript": "^4.8.3"
+    "typescript": "^4.8.4"
   },
   "packageManager": "yarn@3.2.3"
 }
