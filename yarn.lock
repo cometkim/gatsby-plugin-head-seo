@@ -7373,12 +7373,12 @@ __metadata:
     react: ^18.2.0
     react-dom: ^18.2.0
     schema-dts: ^1.1.0
-    typescript: ^4.8.4
+    typescript: ^5.0.0
   peerDependencies:
     gatsby: ^4.19.0 || ^5.0.0
     react: ^17.0.0 || ^18.0.0
     react-dom: ^17.0.0 || ^18.0.0
-    typescript: ^4.0.0
+    typescript: ^4.0.0 || ^5.0.0
   peerDependenciesMeta:
     typescript:
       optional: true
@@ -13223,23 +13223,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^4.8.4":
-  version: 4.8.4
-  resolution: "typescript@npm:4.8.4"
+"typescript@npm:^5.0.0":
+  version: 5.0.2
+  resolution: "typescript@npm:5.0.2"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 3e4f061658e0c8f36c820802fa809e0fd812b85687a9a2f5430bc3d0368e37d1c9605c3ce9b39df9a05af2ece67b1d844f9f6ea8ff42819f13bcb80f85629af0
+  checksum: bef1dcd166acfc6934b2ec4d72f93edb8961a5fab36b8dd2aaf6f4f4cd5c0210f2e0850aef4724f3b4913d5aef203a94a28ded731b370880c8bcff7e4ff91fc1
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^4.8.4#~builtin<compat/typescript>":
-  version: 4.8.4
-  resolution: "typescript@patch:typescript@npm%3A4.8.4#~builtin<compat/typescript>::version=4.8.4&hash=1a91c8"
+"typescript@patch:typescript@^5.0.0#~builtin<compat/typescript>":
+  version: 5.0.2
+  resolution: "typescript@patch:typescript@npm%3A5.0.2#~builtin<compat/typescript>::version=5.0.2&hash=85af82"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: c981e82b77a5acdcc4e69af9c56cdecf5b934a87a08e7b52120596701e389a878b8e3f860e73ffb287bf649cc47a8c741262ce058148f71de4cdd88bb9c75153
+  checksum: b63cb742fbb9aeb3085e002ad8f10d5fd963606aa4d6b3b65b4e76c396ff09739f03b5dbae08e1698c3bce9d5619d3f67aeb7ee470ed4016bd345b3cfe37b54a
   languageName: node
   linkType: hard
 
