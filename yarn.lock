@@ -7369,7 +7369,7 @@ __metadata:
     "@types/react-dom": ^18.0.8
     babel-preset-gatsby-package: ^3.0.0
     gatsby: ^5.0.1
-    radix3: ^0.2.1
+    radix3: ^1.0.0
     react: ^18.2.0
     react-dom: ^18.2.0
     schema-dts: ^1.1.0
@@ -11396,10 +11396,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"radix3@npm:^0.2.1":
-  version: 0.2.1
-  resolution: "radix3@npm:0.2.1"
-  checksum: 4d7b7360000efb96bf542a7327aafe6f23a21b25add40f173ade2fb1a757be5f3dc4fd2caf6fab746b68d1b0f176d56fc9f529e8493307d69cc3cb4ca4fcb57e
+"radix3@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "radix3@npm:1.0.0"
+  checksum: 91086baa4dca048edce44d8267ac142d70a33091e9499853d9e59cf6f310d984224a6d4db20b52aef54cb4e5071b368e472c5f351086748b84173771e184a4a9
   languageName: node
   linkType: hard
 
