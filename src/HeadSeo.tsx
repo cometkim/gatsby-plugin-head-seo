@@ -19,6 +19,7 @@ export type HeadSeoProps = {
    * @default true
    */
   root?: boolean,
+  canonicalUrl?: string,
 };
 
 export type HeadSeoChildProps = {
@@ -40,6 +41,7 @@ export default function HeadSeo({
   description,
   alternates = [],
   children,
+  canonicalUrl,
 }: HeadSeoProps) {
   const staticData = useStaticQuery(graphql`
     query {
@@ -67,28 +69,30 @@ export default function HeadSeo({
     alternates,
   };
 
+  const canonicalHref = canonicalUrl || props.url.toString();
+
   return (
     <>
       {root && (
         <>
-        {props.title && (
-          <title>{props.title}</title>
-        )}
+          {props.title && (
+            <title>{props.title}</title>
+          )}
 
-        {props.description && (
-          <meta name="description" content={props.description} />
-        )}
+          {props.description && (
+            <meta name="description" content={props.description} />
+          )}
 
-        <link rel="canonical" href={props.url.toString()} />
+          <link rel="canonical" href={canonicalHref} />
 
-        {alternates.map(alternate => (
-          <link
-            key={alternate.url.toString()}
-            rel="alternate"
-            href={alternate.url.toString()}
-            media={alternate.media || undefined}
-          />
-        ))}
+          {alternates.map(alternate => (
+            <link
+              key={alternate.url.toString()}
+              rel="alternate"
+              href={alternate.url.toString()}
+              media={alternate.media || undefined}
+            />
+          ))}
         </>
       )}
 
