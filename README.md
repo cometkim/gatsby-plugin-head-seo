@@ -155,19 +155,20 @@ See [code](src/jsonld) for more detail.
 
 ### Composition of Multiple `<HeadSeo>`
 
-Set `root=false` to prevent duplication of meta tags.
-
 ```tsx
-<HeadSeo location={location} root>
-  <HeadSeo location={location} root={false}>
-    {({ title }) => (
-      // ...
-    )}
-  </HeadSeo>
+<HeadSeo location={location}>
+  {({ title: siteTitle }) => (
+    <HeadSeo location={location} title={`Category | ${siteTitle}`}>
+      {({ title: categoryTitle }) => (
+        <title>{`Content | ${categoryTitle}`}</title>
+        // So the result will be `Content | Category | Site`
+      )}
+    </HeadSeo>
+  )}
 </HeadSeo>
 ```
 
-BTW, this is not the final solution for de-duplication.
+FYI, this plugin uses [gatsby-plugin-dedupe-head](https://github.com/cometkim/gatsby-plugin-dedupe-head) for deduplication of tags.
 
 ## Acknowledgement
 
