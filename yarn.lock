@@ -4403,7 +4403,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-preset-gatsby-package@npm:^3.0.0":
+"babel-preset-gatsby-package@npm:^3.8.0":
   version: 3.8.0
   resolution: "babel-preset-gatsby-package@npm:3.8.0"
   dependencies:
@@ -7464,14 +7464,14 @@ __metadata:
     "@babel/core": ^7.20.2
     "@types/react": ^18.0.25
     "@types/react-dom": ^18.0.8
-    babel-preset-gatsby-package: ^3.0.0
-    gatsby: ^5.0.1
+    babel-preset-gatsby-package: ^3.8.0
+    gatsby: ^5.8.1
     gatsby-plugin-dedupe-head: ^1.0.1
-    radix3: ^1.0.0
+    radix3: ^1.0.1
     react: ^18.2.0
     react-dom: ^18.2.0
     schema-dts: ^1.1.2
-    typescript: ^5.0.0
+    typescript: ^5.0.4
   peerDependencies:
     gatsby: ^4.19.0 || ^5.0.0
     react: ^17.0.0 || ^18.0.0
@@ -7609,7 +7609,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby@npm:^5.0.1":
+"gatsby@npm:^5.8.1":
   version: 5.8.1
   resolution: "gatsby@npm:5.8.1"
   dependencies:
@@ -11474,7 +11474,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"radix3@npm:^1.0.0":
+"radix3@npm:^1.0.1":
   version: 1.0.1
   resolution: "radix3@npm:1.0.1"
   checksum: 042e11588464ca444a663f78c2aad11eb35533a26d08a56a53786fd60ddb20a058c720d8f66cad4f010859493753f29ac36aaa47d122b6459675c68a3f74928a
@@ -13282,7 +13282,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^5.0.0":
+"typescript@npm:^5.0.4":
   version: 5.0.4
   resolution: "typescript@npm:5.0.4"
   bin:
@@ -13292,7 +13292,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^5.0.0#~builtin<compat/typescript>":
+"typescript@patch:typescript@^5.0.4#~builtin<compat/typescript>":
   version: 5.0.4
   resolution: "typescript@patch:typescript@npm%3A5.0.4#~builtin<compat/typescript>::version=5.0.4&hash=85af82"
   bin:

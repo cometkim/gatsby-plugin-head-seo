@@ -40,7 +40,7 @@
   },
   "dependencies": {
     "gatsby-plugin-dedupe-head": "^1.0.1",
-    "radix3": "^1.0.0",
+    "radix3": "^1.0.1",
     "schema-dts": "^1.1.2"
   },
   "devDependencies": {
@@ -48,11 +48,11 @@
     "@babel/core": "^7.20.2",
     "@types/react": "^18.0.25",
     "@types/react-dom": "^18.0.8",
-    "babel-preset-gatsby-package": "^3.0.0",
-    "gatsby": "^5.0.1",
+    "babel-preset-gatsby-package": "^3.8.0",
+    "gatsby": "^5.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "typescript": "^5.0.0"
+    "typescript": "^5.0.4"
   },
   "packageManager": "yarn@3.5.0"
 }
