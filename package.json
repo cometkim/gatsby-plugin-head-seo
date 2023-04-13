@@ -25,6 +25,7 @@
     "build": "babel gatsby -x .ts,.tsx -d . --presets gatsby-package"
   },
   "files": [
+    "src",
     "/*.js"
   ],
   "peerDependencies": {
