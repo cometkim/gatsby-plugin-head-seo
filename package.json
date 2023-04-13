@@ -40,7 +40,7 @@
     }
   },
   "dependencies": {
-    "gatsby-plugin-dedupe-head": "^1.0.1",
+    "gatsby-plugin-dedupe-head": "^1.1.0",
     "radix3": "^1.0.1",
     "schema-dts": "^1.1.2"
   },
