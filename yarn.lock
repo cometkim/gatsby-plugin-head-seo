@@ -7481,12 +7481,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-dedupe-head@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "gatsby-plugin-dedupe-head@npm:1.1.0"
+"gatsby-plugin-dedupe-head@npm:^1.1.1":
+  version: 1.1.1
+  resolution: "gatsby-plugin-dedupe-head@npm:1.1.1"
   peerDependencies:
     gatsby: ^4.0.0 || ^5.0.0
-  checksum: 4ff56167009c51be3e85af7cbcddae2f4ddb4e019d5b0c8db891328b18d06175b22159f358138151952014ee8f3bab2fa3b1c1dcb774f9b954d185a52c0c263b
+  checksum: 625336398512d72967d73420d54664fd710526598ff9bbdd573a57cd3d9a0eddb54a41238dd15d30ee65b747175d0f60b0727b16f905e531c43ddb66c75b1655
   languageName: node
   linkType: hard
 
@@ -7500,7 +7500,7 @@ __metadata:
     "@types/react-dom": ^18.0.8
     babel-preset-gatsby-package: ^3.8.0
     gatsby: ^5.8.1
-    gatsby-plugin-dedupe-head: ^1.1.0
+    gatsby-plugin-dedupe-head: ^1.1.1
     radix3: ^1.0.1
     react: ^18.2.0
     react-dom: ^18.2.0
