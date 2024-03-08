@@ -11512,9 +11512,9 @@ __metadata:
   linkType: hard
 
 "radix3@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "radix3@npm:1.0.1"
-  checksum: 042e11588464ca444a663f78c2aad11eb35533a26d08a56a53786fd60ddb20a058c720d8f66cad4f010859493753f29ac36aaa47d122b6459675c68a3f74928a
+  version: 1.1.1
+  resolution: "radix3@npm:1.1.1"
+  checksum: e65754552aa7e68d8b324b66b879f2fa019cec1229d44806f908aedf9b6e731ece4c9dd5823ec103d25d6d3e3223a197ed27987ab3479588a0dbab69a155517c
   languageName: node
   linkType: hard
 
