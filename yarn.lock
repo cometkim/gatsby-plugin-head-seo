@@ -3,7 +3,7 @@
 
 __metadata:
   version: 8
-  cacheKey: 10
+  cacheKey: 10c0
 
 "@ampproject/remapping@npm:^2.2.0":
   version: 2.2.0
@@ -7504,7 +7504,7 @@ __metadata:
     radix3: "npm:^1.0.1"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
-    schema-dts: "npm:^1.1.2"
+    schema-dts: "npm:^2.0.0"
     typescript: "npm:^5.0.4"
   peerDependencies:
     gatsby: ^4.19.0 || ^5.0.0
@@ -12118,12 +12118,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"schema-dts@npm:^1.1.2":
-  version: 1.1.2
-  resolution: "schema-dts@npm:1.1.2"
-  peerDependencies:
-    typescript: ">=4.1.0"
-  checksum: 8/29703363b26215174268bf205a12ea78f1d264c8e696316de36ed8be2ab23e691ccea251899ba9245d89a45af5978c8a1ee162b7a4d07db999fd3300d842b4b6
+"schema-dts-lib@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "schema-dts-lib@npm:1.1.0"
+  checksum: 10c0/ee8992c0363b2a37de3562fb21dce3c04db8376ff0e5447c5b4ee5984d904b67507897011dad819c1e3673e0339dd7f07cd0ee0e620a70195b0f7119eeedb463
+  languageName: node
+  linkType: hard
+
+"schema-dts@npm:^2.0.0":
+  version: 2.1.0
+  resolution: "schema-dts@npm:2.1.0"
+  dependencies:
+    schema-dts-lib: "npm:^1.1.0"
+  checksum: 10c0/93fc3df29744b9f55e5c8453bbc1969145fa32fa2d132e85d68f3647861d2d22f9b3cc2c0e28e04c7e778d333e2d83d7790d75df0b675d3381fbdb11f4e4309b
   languageName: node
   linkType: hard
 
