@@ -46,8 +46,8 @@
     "schema-dts": "^1.1.2"
   },
   "devDependencies": {
-    "@babel/cli": "^7.19.3",
-    "@babel/core": "^7.20.2",
+    "@babel/cli": "^8.0.0",
+    "@babel/core": "^8.0.0",
     "@types/react": "^18.0.25",
     "@types/react-dom": "^18.0.8",
     "babel-preset-gatsby-package": "^3.8.0",
